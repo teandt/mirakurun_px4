@@ -2,8 +2,6 @@ services:
   isdbscanner:
     build: .
     image: isdb-scanner
-    tty: true
-    stdin_open: true
 
     devices:
       - /dev/pxmlt5video0:/dev/pxmlt5video0
@@ -17,4 +15,4 @@ services:
       - ../mirakurun/conf:/app/conf
 
     command: >
-      sh -c "isdb-scanner /app/outfiles && chown -R ${UID:-1000}:${GID:-1000} /app/outfiles" && cp /app/outfiles/Mirakurun/channels_recpt1.yml /app/conf/channels.yml && cp /app/outfiles/Mirakurun/tuners_recpt1.yml /app/conf/tuners.yml
+      sh -c "isdb-scanner /app/outfiles && chown -R ${UID:-1000}:${GID:-1000} /app/outfiles && cp /app/outfiles/Mirakurun/channels_recpt1.yml /app/conf/channels.yml && cp /app/outfiles/Mirakurun/tuners_recpt1.yml /app/conf/tuners.yml"
