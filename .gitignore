@@ -1,6 +1,7 @@
-mirakurun/opt/node_modules
-mirakurun/data
+mirakurun/data/*
 !mirakurun/data/.gitkeep
-mirakurun/opt
+mirakurun/opt/*
+!mirakurun/opt/bin
+mirakurun/opt/bin/*
 !mirakurun/opt/bin/.gitkeep
 !mirakurun/opt/bin/startup
