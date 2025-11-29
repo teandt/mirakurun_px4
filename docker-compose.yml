@@ -40,13 +40,13 @@ services:
 
     volumes:
       # you can change to any location if you want.
-      - ./opt:/opt
-      - ./conf:/app-config
-      - ./data:/app-data
+      - ./mirakurun/opt:/opt
+      - ./mirakurun/conf:/app-config
+      - ./mirakurun/data:/app-data
 
     container_name: mirakurun
     build:
-      context: ./
+      context: ./mirakurun/docker
       dockerfile: ${DOCKERFILE:-Dockerfile}
     ports:
     - "40772:40772"
