@@ -30,5 +30,5 @@ RUN apt-get update && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 COPY --from=build /app /app
-CMD ["./docker/container-init.sh"]
+CMD ["./container-init.sh"]
 EXPOSE 40772 9229
