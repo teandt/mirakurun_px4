@@ -40,7 +40,6 @@ services:
 
     volumes:
       # you can change to any location if you want.
-      #- /opt/mirakurun/run:/var/run
       - ./opt:/opt
       - ./conf:/app-config
       - ./data:/app-data
@@ -49,7 +48,6 @@ services:
     build:
       context: ./
       dockerfile: ${DOCKERFILE:-Dockerfile}
-    #network_mode: host
     ports:
     - "40772:40772"
     - "9229:9229"
