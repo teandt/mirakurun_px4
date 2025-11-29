@@ -1,0 +1,6 @@
+opt/node_modules
+data
+!data/.gitkeep
+opt
+!opt/bin/.gitkeep
+!opt/bin/startup
