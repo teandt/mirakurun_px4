@@ -5,3 +5,7 @@ mirakurun/opt/*
 mirakurun/opt/bin/*
 !mirakurun/opt/bin/.gitkeep
 !mirakurun/opt/bin/startup
+mirakurun/conf/*
+!mirakurun/conf/.gitkeep
+ISDBScanner/outfiles/*
+!ISDBScanner/outfiles/.gitkeep
